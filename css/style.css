@@ -1,0 +1,131 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Barlow', Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed; /* 固定在顶部 */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* 确保它在其他内容之上 */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 60px; /* 留出header的高度 */
+    padding-bottom: 60px; /* 留出footer的高度 */
+}
+
+.horizontal-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid #eee;
+}
+
+.horizontal-section:last-child {
+    border-right: none;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* 固定在底部 */
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* 确保它在其他内容之上 */
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .horizontal-section {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .horizontal-section:last-child {
+        border-bottom: none;
+    }
+}
+/* 确保header的.container水平居中 */
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 使#branding水平居中 */
+#branding {
+    text-align: center;
+    width: 100%; /* 确保它占据整个容器宽度 */
+}
+
+/* 为#branding内的h1添加样式 */
+#branding h1 {
+    margin: 0; /* 移除默认的外边距 */
+    font-size: 2rem; /* 根据需要调整字体大小 */
+}
+/* 确保header的.container水平居中 */
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 使#branding水平居中 */
+#branding {
+    text-align: center;
+    width: 100%; /* 确保它占据整个容器宽度 */
+}
+
+/* 为#branding内的h1添加样式 */
+#branding h1 {
+    margin: 0; /* 移除默认的外边距 */
+    font-size: 2rem; /* 根据需要调整字体大小 */
+}
