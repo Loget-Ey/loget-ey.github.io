@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>博客文章</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header, main, footer {
+      padding: 20px;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    header h1 {
+      display: inline-block;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      float: right;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      background-color: #1a1a1a;
+      padding: 40px 0;
+    }
+
+    article {
+      margin-bottom: 30px;
+    }
+
+    article h2 {
+      margin-bottom: 10px;
+    }
+
+    article .meta {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    article .content {
+      margin-top: 20px;
+    }
+
+    article .content h3 {
+      margin-top: 20px;
+    }
+
+    article .content ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    article .content blockquote {
+      margin: 20px 0;
+      padding: 10px;
+      background-color: #222;
+      border-left: 4px solid #fff;
+    }
+
+    .comments {
+      background-color: #1a1a1a;
+      padding: 20px 0;
+    }
+
+    .comments h2 {
+      margin-bottom: 20px;
+    }
+
+    .comments form {
+      margin-bottom: 20px;
+    }
+
+    .comments .form-group {
+      margin-bottom: 15px;
+    }
+
+    .comments .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .comments .form-group input, .comments .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      background-color: #222;
+      border: 1px solid #333;
+      color: #fff;
+    }
+
+    .comments .form-group button {
+      padding: 10px 20px;
+      background-color: #333;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .comments .form-group button:hover {
+      background-color: #555;
+    }
+
+    .comments .comment-list {
+      margin-top: 20px;
+    }
+
+    .comments .comment {
+      margin-bottom: 20px;
+    }
+
+    .comments .comment .comment-meta {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-bottom: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>罗思工作室</h1>
+  </div>
+</header>
+
+<main>
+  <section class="container">
+    <article>
+      <header>
+        <h2>全新hackintosh安装方法！</h2>
+        <p class="meta">作者：<a href="michael.html">麦扣</a> | 发布日期：2025年08月17日</p>
+      </header>
+      <div class="content">
+        <p>全新hackintosh安装方法，无需u盘！</p>
+        <ul>
+          <li>下载R-Drive Image</li>
+          <li>下载映像（.rdr）</li>
+          <li>安装macOS</li>
+        </ul>
+        <h3>下载R-Drive Image</h3>
+        <p>下载地址：</p>
+        <a href="https://www.drive-image.com/zhcn/" >点击进入</a>
+        <blockquote>
+          <p>按照步骤安装</p>
+        </blockquote>
+        <h3>下载映像（.rdr）</h3>
+        <p>下载地址</p>
+        <a href="https://cloud.189.cn/t/m2iuAnEn6z2u">点击进入 提取码：6tsf</a>
+        <blockquote>
+          <p>选择一个空间大的盘进行下载\o/</p>
+        </blockquote>
+        <h3>安装macOS</h3>
+        <p>把准备的分区删除，在R-Drive Image中点击恢复映像，选择下载好的映像，把上面的分区拉到要安装的盘，点击下一步，等待吧OvO，打开diskgenius，点击工具，bios\uefi启动项，添加，选择BOOT里面的efi文件确认，名字设为OC保存设置。</p>
+        <blockquote>
+          <p>进入启动菜单选择OC，等待一会就使用吧</p>
+        </blockquote>
+      </div>
+    </article>
+  </section>
+</main>
+
+<section class="comments container">
+  <h2>评论</h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="name">姓名：</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">邮箱：</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="comment">评论：</label>
+      <textarea id="comment" name="comment" rows="5" required></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">提交评论</button>
+    </div>
+  </form>
+</section>
+
+<footer>
+  <div class="container">
+  </div>
+</footer>
+</body>
+</html>
